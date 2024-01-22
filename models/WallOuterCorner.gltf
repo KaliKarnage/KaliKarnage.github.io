@@ -1,0 +1,190 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v3.1.13472455)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 2574,
+            "type": "VEC3",
+            "max": [131.2342987060547, 199.99998474121095, 169.59793090820313],
+            "min": [-100.20735168457031, 0.00000762939453125, -59.999996185302737]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 2574,
+            "type": "VEC3",
+            "max": [1.0, 1.0, 1.0],
+            "min": [-1.0, -1.0, -1.0]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 2574,
+            "type": "VEC4",
+            "max": [1.0, 1.0, 1.0, 1.0],
+            "min": [-1.0, -1.0, -1.0, -1.0]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 2574,
+            "type": "VEC2",
+            "max": [0.9974520206451416, 1.0],
+            "min": [0.0, 0.0013110041618347169]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 12096,
+            "type": "SCALAR",
+            "max": [2573.0],
+            "min": [0.0]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 147744,
+            "uri": "WallOuterCorner.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 30888,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 30888,
+            "byteLength": 30888,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 61776,
+            "byteLength": 41184,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 102960,
+            "byteLength": 20592,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 123552,
+            "byteLength": 24192,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicRoughnessTexture": {
+                    "index": 1
+                },
+                "baseColorFactor": [0.6000000238418579, 0.6000000238418579, 0.6000000238418579, 1.0],
+                "metallicFactor": 0.0
+            },
+            "normalTexture": {
+                "index": 2
+            },
+            "occlusionTexture": {
+                "index": 3
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "RoadKillOut",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TANGENT": 2,
+                        "TEXCOORD_0": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "OuterWallCorner.obj",
+            "matrix": [0.009999999776482582, 0.0, 0.0, 0.0, 0.0, 0.009999999776482582, 0.0, 0.0, 0.0, 0.0, 0.009999999776482582, 0.0, 0.0, 0.0, 0.0, 1.0],
+            "children": [1, 2]
+        },
+        {
+            "name": "RoadKillOut"
+        },
+        {
+            "name": "RoadKillOut_node",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [0]
+        }
+    ],
+    "scene": 0,
+    "images": [
+        {
+            "uri": "OuterWallCorner_DefaultMaterial_BaseColor.png"
+        },
+        {
+            "uri": "OuterWallCorner_DefaultMaterial_Metallic.png"
+        },
+        {
+            "uri": "OuterWallCorner_DefaultMaterial_Normal.png"
+        },
+        {
+            "uri": "OuterWallCorner_DefaultMaterial_Roughness.png"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 10497,
+            "wrapT": 10497
+        }
+    ]
+}

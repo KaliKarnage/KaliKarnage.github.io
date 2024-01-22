@@ -1,0 +1,25 @@
+body {
+    overflow-x: hidden;
+    background-color: #2b2b2b !important;
+    color: white !important;
+}
+
+.navbar {
+    font-size: 1.5vw;
+}
+
+.navbar-brand {
+    padding-left: 5%;
+}
+
+.nav-item:hover {
+    background-color: slategray;
+}
+
+.col-md-9 {
+    padding-top: 25px;
+}
+
+.col-md-3 {
+    background-color: blue;
+}

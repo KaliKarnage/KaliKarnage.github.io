@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #363636;
+  }
+
+  html body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(55, 55, 55);
+    overflow-x: hidden;
+}
+  
+  #my_dataviz {
+    background-color: #363636;
+    border: black solid;
+    overflow-x: scroll;
+  }
+  
+  svg {
+    display: block;
+    
+  }
+  
+  .axis text {
+    fill: white;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: white;
+  }
+  
+  .tooltip {
+    opacity: 0;
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    pointer-events: none;
+  }
+  
+  body .navbar .navbar-brand {
+    color: white;
+}
+
+.navbar {
+    background-color: rgb(55, 55, 55);
+    
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-nav a{
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: lightgrey;
+    color: black;
+}
+  

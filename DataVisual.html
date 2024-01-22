@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW Weapons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/DataVisual.css">
+    <script src="https://unpkg.com/react@17/umd/cjs/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/cjs/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Ben Villanueva |</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa-solid fa-house icon"></i>Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutMe.html"><i class="fa-solid fa-user icon"></i>About Me </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Resume.html"><i class="fa-solid fa-scroll icon"></i>Resume </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item active" href="Games.html"><i class="fa-solid fa-gamepad icon"></i>
+                            Games</a>
+                        <a class="dropdown-item" href="Models.html"><i class="fa-solid fa-cube icon"></i> Models</a>
+                        <a class="dropdown-item active" href="DataVisual.html"><i class="fa-solid fa-chart-simple icon"></i> Data
+                            Visualization</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="banner">
+        <img id="thunderfury" src="/imgs/thunderfury-blessed-blade-of-windseeker.png">
+        <h1>Not All Weapons Are Created Equal</h1>
+        <img id="sulfuras" src="/imgs/sulfuras-hand-of-ragnaros.png">
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div id="narrative-left">
+                    <p>The narrative is centered around the exploration and visualization of weapon trends in the
+                        massively multiplayer online role-playing game (MMORPG), "World of Warcraft" (WoW). This topic
+                        was selected due to the game's enduring popularity and the rich, detailed universe it has
+                        cultivated over many years. The weapons in WoW are not just tools for combat; they are a blend
+                        of art, lore, and player achievement. They carry significant value in the game's economy and
+                        player experience, making them a compelling subject for data analysis and visualization.</p>
+                    <p>The primary aim was to delve into questions such as: How have weapon attributes like item level,
+                        damage, and type varied across different game expansions? Are there noticeable trends in the DPS
+                        (Damage Per Second) of weapons? How does the weapon's type influence its other attributes like
+                        item level or selling price? Answering these questions could provide insights into the game's
+                        evolution and its impact on player strategies and preferences.</p>
+                    <ol>
+                        <li>Hexbin Density Chart: This visualization focused on the density of different types of
+                            weapons across various expansions. It revealed how the introduction of new expansions
+                            influenced the variety and frequency of weapon types. For instance, certain expansions might
+                            have introduced more diverse weapon types, reflecting the game developers' focus on
+                            broadening the arsenal available to players.</li>
+                        <li>Bubble Chart: Here, the relationship between item level, DPS, and overall sell price was
+                            explored. This chart provided insights into how weapon power (as indicated by DPS and item
+                            level) correlates with its economic value in the game. It was observed that higher item
+                            levels generally corresponded to higher DPS, which in turn influenced the weapon's market
+                            value.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-6">
+                <div id="narrative-right">
+                    <ol start="3">
+                        <li>Heatmap: This visualization highlighted the distribution of weapons based on item level and
+                            type across different DPS ranges. It showcased which types of weapons were more prevalent at
+                            various item levels and how this correlates with their effectiveness (DPS).</li>
+                    </ol>
+                    <ul>
+                        <li>There is a clear evolution in weapon types and attributes with each new game expansion,
+                            indicating the game's dynamic nature and its adaptation to player needs and technological
+                            advancements.</li>
+                        <li>Higher item levels typically equate to higher DPS, reflecting a progression system where
+                            players are rewarded with more potent weapons as they advance.</li>
+                        <li>The diversity in weapon types across expansions shows the developers' commitment to
+                            providing a varied gaming experience.</li>
+                        <li>Economic aspects, like selling price, are closely tied to the weapon's power and rarity,
+                            impacting the game's economy and player trading behaviors.</li>
+                    </ul>
+                    <p>In conclusion, the data and visualizations offer a fascinating glimpse into the complex world of
+                        "World of Warcraft," demonstrating how the game evolves and reacts to its player base, and
+                        highlighting the intricate balance between game mechanics, player experience, and the in-game
+                        economy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/uEQ2ax8YJhM?si=u8n5HyO4qB22t3aR"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="tt19019" class="wowhead-tooltip wowhead-tooltip-width-restriction wowhead-tooltip-width-320"
+        style="float: left; padding-top: 1px; width: 320px; visibility: hidden;" data-visible="no">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <table style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td><b class="q5">Thunderfury, Blessed Blade of the
+                                            Windseeker</b><span class="q"><br>Item
+                                            Level 80</span><br>Binds when picked up<br>Unique<table
+                                            width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td>One-Hand</td>
+                                                    <th><span class="q1">Sword</span></th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td><span>44 - 115 Damage</span></td>
+                                                    <th>Speed 1.90</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>(41.84 damage per second)<br><span>+5
+                                            Agility</span><br><span>+8
+                                            Stamina</span><br>+8
+                                        Fire Resistance<br>+9 Nature Resistance<br>Durability 125 / 125
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td>Requires Level 60<br><span class="q2">Chance on hit: <a
+                                                href="/classic/spell=21992/thunderfury" class="q2">Blasts your enemy
+                                                with lightning, dealing 300 Nature damage and then jumping to additional
+                                                nearby enemies. &nbsp;Each jump reduces that victim's Nature resistance
+                                                by 25. Affects 5 targets. Your primary target is also consumed by a
+                                                cyclone, slowing its attack speed by 20% for 12
+                                                sec.</a></span>
+                                        <div class="whtt-sellprice">Sell Price: <span class="moneygold">25</span> <span
+                                                class="moneysilver">53</span> <span class="moneycopper">55</span></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <th style="background-position: top right"></th>
+                </tr>
+                <tr>
+                    <th style="background-position: bottom left"></th>
+                    <th style="background-position: bottom right"></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<footer>
+    <h1>Did somebody say<h1 id="orange">[Thunderfury, Blessed Blade Of The Windseeker]</h1>?</h1>
+</footer>
+
+<script>
+    const orangeElement = document.getElementById('orange');
+    const tooltipDiv = document.getElementById('tt19019');
+
+    orangeElement.addEventListener('mouseover', (e) => {
+        const cursorX = e.clientX;
+        const cursorY = e.clientY;
+
+        tooltipDiv.style.visibility = 'visible';
+        tooltipDiv.style.left = cursorX + 'px';
+        tooltipDiv.style.top = cursorY + 'px';
+    });
+
+    orangeElement.addEventListener('mouseout', () => {
+        tooltipDiv.style.visibility = 'hidden';
+    });
+</script>
+
+</html>
