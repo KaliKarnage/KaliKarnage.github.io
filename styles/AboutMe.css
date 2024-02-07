@@ -128,3 +128,15 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none !important;
 }
+
+.site-construction-message {
+    background-color: yellow;
+    font-size: 3.5vw;
+    color: black;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    border: black dashed 10px;
+
+}
