@@ -280,3 +280,15 @@ footer {
     border-color: rgb(0, 0, 0);
     border-style: groove;
 }
+
+.site-construction-message {
+    background-color: yellow;
+    font-size: 3.5vw;
+    color: black;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    border: black dashed 10px;
+
+}

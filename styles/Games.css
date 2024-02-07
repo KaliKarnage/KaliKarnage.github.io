@@ -225,3 +225,15 @@ blockquote {
     margin: auto;
     /* Center the carousel */
 }
+
+.site-construction-message {
+    background-color: yellow;
+    font-size: 3.5vw;
+    color: black;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    border: black dashed 10px;
+
+}
