@@ -1,0 +1,92 @@
+body {
+    overflow-x: hidden;
+}
+
+footer {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-item:hover {
+    background-color: slategray !important;
+}
+
+.navbar {
+    font-size: 1.5vw;
+}
+
+.navbar-brand {
+    padding-left: 5%;
+}
+
+.nav-item:hover {
+    background-color: slategray;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+.col-md-6 p {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.5vw;
+}
+
+.item-tag-Linkedin a {
+    display: inline-block;
+    height: 25px;
+    min-width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Myriad', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; 
+    color: inherit; 
+    background-color: #0077b5;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.item-tag-Linkedin a:hover {
+    background-color: #e8e8e8;
+    color: black;
+}
+
+.link-text {
+    font-size: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none !important;
+}
+
+#portfolio-intro{
+    font-size: 1.5vw;
+}
+
+
+
+
+* {
+    box-sizing: border-box
+}
+
+
+.site-construction-message {
+    background-color: yellow;
+    font-size: 3.5vw;
+    color: black;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    border: black dashed 10px;
+
+}
