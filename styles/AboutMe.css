@@ -23,6 +23,30 @@ footer {
     padding-top: 25px;
 }
 
+.item-tag-Linkedin a {
+    display: inline-block;
+    height: 25px;
+    min-width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Myriad', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Keeps the text color consistent */
+    background-color: #0077b5;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.item-tag-Linkedin a:hover {
+    background-color: #e8e8e8;
+    color: black;
+}
+
 
 .navbar {
     font-size: 1.5vw;
