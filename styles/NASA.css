@@ -95,7 +95,7 @@ footer {
 iframe {
     display: block; /* Ensures the iframe behaves like a block element */
     width: 80%; /* Responsive width, you can adjust this value */
-    height: 500px; /* Fixed height, you can change it as per your need */
+    height: 100%; /* Fixed height, you can change it as per your need */
     border: 2px solid #333; /* Adding border */
     border-radius: 8px; /* Rounded corners for the iframe */
     margin: 0 auto; /* Auto margins on both sides to center it horizontally */
