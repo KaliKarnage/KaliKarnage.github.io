@@ -90,3 +90,24 @@ footer {
     border: black dashed 10px;
 
 }
+/* New styles for iframe, h1, and p tags */
+iframe {
+    width: 100%; /* Responsive width */
+    height: 500px; /* Fixed height, you can change it as per your need */
+    border: 2px solid #333; /* Adding border */
+    border-radius: 8px; /* Rounded corners for the iframe */
+}
+
+h1 {
+    font-size: 4vw; /* Large font size for heading */
+    color: #333; /* Dark color for the heading */
+    text-align: center; /* Center the heading */
+    margin-top: 20px; /* Space above the heading */
+}
+
+p {
+    font-size: 1.2vw; /* Standard font size for paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    color: #666; /* Lighter text color for paragraphs */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
