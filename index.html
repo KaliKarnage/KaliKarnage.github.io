@@ -6,46 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Portfolio</title>
 
+    <!-- Preload the main stylesheet to prioritize fetching -->
+    <link rel="preload" as="style" href="styles/styles.css">
+    <!-- Preload the Google fonts to prioritize fetching -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap">
+    
+    <!-- Apply the main stylesheet after it has loaded -->
+    <link rel="stylesheet" href="styles/styles.css" media="print" onload="this.media='all'">
+    <!-- Apply the Google fonts after they have loaded -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap" media="print" onload="this.media='all'">
+    
+    <!-- Preload critical above-the-fold image -->
+    <link rel="preload" as="image" href="imgs/EnigmaDevPic04.png">
+
+    <!-- Asynchronously load non-critical third-party CSS for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        media="print" onload="this.media='all'">
+    
     <!-- Asynchronously load non-critical JavaScript files -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Preload critical CSS (e.g., your main stylesheet and font) to prioritize fetching -->
-    <link rel="preload" as="style" href="/path/to/your/main-stylesheet.css" onload="this.rel='stylesheet'">
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap"
-        onload="this.rel='stylesheet'">
+    <!-- Inline critical CSS directly in the head to avoid render-blocking -->
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        .navbar {
+            font-size: 1.5vw;
+        }
+        /* Additional inline critical styles can be placed here */
+    </style>
+
+    <!-- Ensure styles are applied for users with JavaScript disabled -->
     <noscript>
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap">
-    </noscript>
-
-    <!-- Preload critical above-the-fold images if necessary -->
-    <link rel="preload" as="image" href="/imgs/EnigmaDevPic04.png">
-
-    <!-- Asynchronously load non-critical third-party CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        media="print" onload="this.media='all'">
-    <noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </noscript>
-
-    
-
-    <!-- Inline critical CSS directly in the head to avoid render-blocking -->
-    <style>
-        
-        body {
-            overflow-x: hidden;
-        }
-
-        .navbar {
-            font-size: 1.5vw;
-        }
-
-        
-    </style>
 </head>
 
 
