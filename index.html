@@ -17,6 +17,13 @@
 
 </head>
 
+<!-- Accessibility & Performance Fixes:
+1. Added aria-labels to buttons and alt text to images to improve accessibility for users relying on screen readers.
+2. Changed script loading to use the async attribute for better performance to prevent render-blocking.
+   Scripts are now fetched in parallel to the HTML parsing and will execute as soon as they are downloaded.
+   This is suitable for scripts that do not depend on other scripts and do not modify the DOM immediately upon execution.
+-->
+
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
