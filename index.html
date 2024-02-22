@@ -5,48 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Portfolio</title>
-
-    <!-- Preload the main stylesheet to prioritize fetching -->
-    <link rel="preload" as="style" href="styles/styles.css">
-    <!-- Preload the Google fonts to prioritize fetching -->
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap">
-    
-    <!-- Apply the main stylesheet after it has loaded -->
-    <link rel="stylesheet" href="styles/styles.css" media="print" onload="this.media='all'">
-    <!-- Apply the Google fonts after they have loaded -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap" media="print" onload="this.media='all'">
-    
-    <!-- Preload critical above-the-fold image -->
-    <link rel="preload" as="image" href="imgs/EnigmaDevPic04.png">
-
-    <!-- Asynchronously load non-critical third-party CSS for Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        media="print" onload="this.media='all'">
-    
-    <!-- Asynchronously load non-critical JavaScript files -->
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Inline critical CSS directly in the head to avoid render-blocking -->
-    <style>
-        body {
-            overflow-x: hidden;
-        }
-        .navbar {
-            font-size: 1.5vw;
-        }
-        /* Additional inline critical styles can be placed here */
-    </style>
-
-    <!-- Ensure styles are applied for users with JavaScript disabled -->
-    <noscript>
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 
@@ -113,23 +79,22 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imgs/EnigmaDevPic04.png" class="d-block w-100">
+                    <img src="imgs/EnigmaDevPic04.png" class="d-block w-100" alt="Enigma Alpha Development">
                 </div>
                 <div class="carousel-item">
-                    <img src="imgs/Stock2.jpg" class="d-block w-100">
+                    <img src="imgs/Stock2.jpg" class="d-block w-100" alt="Stock Image Description">
                 </div>
                 <div class="carousel-item">
-                    <img src="imgs/Stock3.jpg" class="d-block w-100">
+                    <img src="imgs/Stock3.jpg" class="d-block w-100" alt="Another Stock Image Description">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Previous">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="Next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
+            
         </div>
     </header>
     <div class="container">
