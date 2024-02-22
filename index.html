@@ -5,16 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="imgs/EnigmaDevPic04.png">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap"
-        rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Preload critical CSS (e.g., your main stylesheet and font) to prioritize fetching -->
+    <link rel="preload" as="style" href="/path/to/your/main-stylesheet.css" onload="this.rel='stylesheet'">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/path/to/your/main-stylesheet.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap">
+    </noscript>
+
+    <!-- Preload critical above-the-fold images if necessary -->
+    <link rel="preload" as="image" href="/path/to/your/above-the-fold-image.jpg">
+
+    <!-- Asynchronously load non-critical third-party CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </noscript>
+
+    <!-- Asynchronously load non-critical JavaScript files -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inline critical CSS directly in the head to avoid render-blocking -->
+    <style>
+        /* Inline critical styles here */
+        body {
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            font-size: 1.5vw;
+        }
+
+        /* More critical inline styles */
+    </style>
 </head>
+
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,8 +64,9 @@
                     <a class="nav-link" href="AboutMe.html"><i class="fa-solid fa-user icon"></i>About Me </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/files/Benedicto_Villanueva_III_Resume_noreferences.pdf"><i class="fa-solid fa-scroll icon"></i>Resume </a>
-                </li>                        
+                    <a class="nav-link" href="/files/Benedicto_Villanueva_III_Resume_noreferences.pdf"><i
+                            class="fa-solid fa-scroll icon"></i>Resume </a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
@@ -45,7 +77,8 @@
                         <a class="dropdown-item" href="#"><i class="fa-solid fa-cube icon"></i> Models</a>
                         <a class="dropdown-item" href="DataVis.html"><i class="fa-solid fa-chart-simple icon"></i> Data
                             Visualization</a>
-                        <a class="dropdown-item" href="NASASuits.html"><i class="fa-solid fa-user-astronaut"></i> NASA SUITS</a>
+                        <a class="dropdown-item" href="NASASuits.html"><i class="fa-solid fa-user-astronaut"></i> NASA
+                            SUITS</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -135,8 +168,8 @@
                 link.setAttribute('media', 'all');
             });
         });
-        </script>
-        
+    </script>
+
 </body>
 
 </html>
