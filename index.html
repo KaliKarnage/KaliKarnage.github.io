@@ -7,11 +7,12 @@
     <title>Digital Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="imgs/EnigmaDevPic04.png">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/styles/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -31,9 +32,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="AboutMe.html"><i class="fa-solid fa-user icon"></i>About Me </a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="Resume.html"><i class="fa-solid fa-scroll icon"></i>Resume </a>
-                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="/files/Benedicto_Villanueva_III_Resume_noreferences.pdf"><i class="fa-solid fa-scroll icon"></i>Resume </a>
                 </li>                        
@@ -130,6 +128,15 @@
     <footer>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const links = document.querySelectorAll('link[rel="stylesheet"][media="print"]');
+            links.forEach(link => {
+                link.setAttribute('media', 'all');
+            });
+        });
+        </script>
+        
 </body>
 
 </html>
