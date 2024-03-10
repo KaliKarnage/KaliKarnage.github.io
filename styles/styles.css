@@ -1,15 +1,27 @@
+/* Color variables for your theme */
+:root {
+    --slate-gray: #708090; /* Primary */
+    --hunyad-yellow: #F6AE2D; /* Secondary */
+    --pantone-orange: #F26419; /* Tertiary */
+    --electric-blue: #01E8FC;
+    --misty-rose: #FFE3E3;
+}
+
 body {
     overflow-x: hidden;
+    background-color: var(--slate-gray); /* Primary color for background */
+    color: var(--misty-rose); /* Contrast color for text */
 }
 
 footer {
     padding: 50px 80px;
     display: flex;
     justify-content: space-between;
+    background-color: var(--pantone-orange); /* Tertiary color for footer background */
 }
 
 .dropdown-item:hover {
-    background-color: slategray !important;
+    background-color: var(--hunyad-yellow) !important; /* Secondary color for dropdown hover */
 }
 
 .project-container {
@@ -22,117 +34,45 @@ footer {
 .project-container h1 {
     text-decoration: underline;
     padding-top: 25px;
+    color: var(--slate-gray); /* Primary color for emphasis */
 }
 
-
+/* Navbar Styles */
 .navbar {
     font-size: 1.5vw;
+    color: var(--misty-rose); /* Adjusted for readability */
 }
 
 .navbar-brand {
-    padding-left: 5%;
+    padding-left: 1%;
+    font-size: 1.5vw;
+    color: black;
+}
+
+.nav-item {
+    color: var(--misty-rose); /* Ensures navbar items are legible against the background */
 }
 
 .nav-item:hover {
-    background-color: slategray;
+    background-color: var(--hunyad-yellow); /* Secondary color for nav item hover */
 }
 
 .row {
     display: flex;
     justify-content: center;
     padding-top: 50px;
-
 }
 
-.col-md-6 h2 {
+.col-md-6 h2, .col-md-6 p {
     padding-top: 25px;
     display: flex;
     justify-content: center;
-}
-
-.col-md-6 p {
     padding-left: 25px;
     padding-right: 25px;
 }
 
 .icon {
     margin-right: 10px;
-}
-
-
-.item-tag-container {
-    margin-top: 10px;
-    width: 100%;
-    text-align: left;
-    overflow: hidden;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-}
-
-.item-tag-CSharp,
-.item-tag-Python,
-.item-tag-HTML,
-.item-tag-CSS,
-.item-tag-Maya,
-.item-tag-SubstancePainter,
-.item-tag-Blender,
-.item-tag-Unity {
-    height: 25px;
-    min-width: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    float: left;
-    margin-right: 5px;
-    margin-top: 5px;
-    text-align: center;
-    border-radius: 4px;
-}
-
-.item-tag-CSharp,
-.item-tag-Python,
-.item-tag-CSS {
-    color: white;
-}
-
-.item-tag-CSharp {
-    background-color: purple;
-}
-
-.item-tag-Python {
-    background-color: #3776ab;
-}
-
-.item-tag-HTML {
-    background-color: #FFA500;
-}
-
-.item-tag-HTML span {
-    color: white;
-
-}
-
-.item-tag-CSS {
-    background-color: blue;
-}
-
-.item-tag-Maya {
-    background-color: #37A0C6;
-}
-
-.item-tag-SubstancePainter {
-    background-color: #94E13D;
-}
-
-.item-tag-Blender {
-    background-color: #EB7700;
-}
-
-.item-tag-Unity {
-    background-color: #888888;
 }
 
 .item-tag-Linkedin a {
@@ -147,16 +87,19 @@ footer {
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Keeps the text color consistent */
-    background-color: #0077b5;
+    text-decoration: none;
+    color: inherit;
+    background-color: #0077b5; /* LinkedIn brand color */
     margin-top: 10px;
     margin-left: 5px;
 }
 
 .item-tag-Linkedin a:hover {
-    background-color: #e8e8e8;
-    color: black;
+    background-color: #0077b5;
+    color: White;
+    border: black 1px solid;
+    border-radius: 5px;
+
 }
 
 .link-text {
@@ -169,13 +112,9 @@ footer {
     font-size: 1.5vw;
 }
 
-
-
-
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
-
 
 .slideshow-container {
     max-width: 1000px;
@@ -183,19 +122,14 @@ footer {
     margin: auto;
 }
 
-
 .mySlides {
     display: none;
     position: absolute;
     left: 100%;
     transition: left 1s ease-in-out;
-    
 }
 
-
-
-.prev,
-.next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -210,18 +144,14 @@ footer {
     user-select: none;
 }
 
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-
-.prev:hover,
-.next:hover {
+.prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 .text {
     color: #f2f2f2;
@@ -233,7 +163,6 @@ footer {
     text-align: center;
 }
 
-
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -241,7 +170,6 @@ footer {
     position: absolute;
     top: 0;
 }
-
 
 .dot {
     cursor: pointer;
@@ -254,35 +182,8 @@ footer {
     transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-.col-2-divide {
-    border-radius: 3px;
-    border-color: rgb(0, 0, 0);
-    border-style: groove;
-}
-
 .site-construction-message {
-    background-color: yellow;
+    background-color: var(--hunyad-yellow);
     font-size: 3.5vw;
     color: black;
     text-align: center;
@@ -291,4 +192,13 @@ footer {
     z-index: 10;
     border: black dashed 10px;
 
+}
+
+#portfolio-intro {
+    border: white solid;
+    padding: 3%;
+}
+
+#portfolio-text-container{
+    padding-bottom: 3%;
 }

@@ -1,44 +1,119 @@
+:root {
+    --slate-gray: #708090;
+    --hunyad-yellow: #F6AE2D;
+    --pantone-orange: #F26419;
+    --electric-blue: #01E8FC;
+    --misty-rose: #FFE3E3;
+}
+
 body {
     overflow-x: hidden;
+    background-color: var(--slate-gray); /* Applying the updated primary background color */
+    color: var(--misty-rose); /* Using misty-rose for the text color for contrast */
+    width: 100%;
 }
 
 footer {
     padding: 50px 80px;
     display: flex;
     justify-content: space-between;
+    background-color: var(--pantone-orange); /* Using pantone-orange for the footer background */
 }
 
-.row {
-    padding-bottom: 50px;
-}
-
-.dropdown-item:hover {
-    background-color: slategray !important;
-}
-
+/* Navbar Styles */
 .navbar {
     font-size: 1.5vw;
+    color: var(--misty-rose); /* Adjusted for readability */
 }
 
 .navbar-brand {
-    padding-left: 5%;
+    padding-left: 1%;
+    font-size: 1.5vw;
+    color: black;
+}
+
+.nav-item {
+    color: var(--misty-rose); /* Ensures navbar items are legible against the background */
 }
 
 .nav-item:hover {
-    background-color: slategray;
+    background-color: var(--hunyad-yellow); /* Secondary color for nav item hover */
 }
 
-.row {
+.container-fluid {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.row, .row {
     display: flex;
     justify-content: center;
     padding-top: 50px;
-
+    padding-bottom: 50px;
 }
 
+
+.dropdown-item:hover, .nav-item:hover {
+    background-color: var(--hunyad-yellow) !important; /* Using hunyad-yellow for hover states */
+}
+
+
 .col-md-6 p {
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 1.5vw;
+    color: var(--misty-rose); /* Text color updated for readability */
+}
+
+/* Item-tag-Linkedin styles are kept unchanged as requested */
+
+.link-text, #portfolio-intro {
+    font-size: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none !important;
+    color: var(--electric-blue); /* Electric-blue for link text */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.site-construction-message {
+    background-color: var(--hunyad-yellow); /* Hunyad-yellow for visibility */
+    font-size: 3.5vw;
+    color: black;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    border: black dashed 10px;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+}
+
+.video-responsive iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4vw; 
+    color: var(--misty-rose); /* Slate-gray for heading */
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2vw;
+    line-height: 1.6;
+    color: var(--misty-rose); /* Misty-rose for paragraph text */
+    margin-bottom: 20px;
 }
 
 .item-tag-Linkedin a {
@@ -53,68 +128,17 @@ footer {
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
-    text-decoration: none; 
-    color: inherit; 
-    background-color: #0077b5;
+    text-decoration: none;
+    color: inherit;
+    background-color: #0077b5; /* LinkedIn brand color */
     margin-top: 10px;
     margin-left: 5px;
 }
 
 .item-tag-Linkedin a:hover {
-    background-color: #e8e8e8;
-    color: black;
-}
+    background-color: #0077b5;
+    color: White;
+    border: black 1px solid;
+    border-radius: 5px;
 
-.link-text {
-    font-size: 2vw;
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none !important;
-}
-
-#portfolio-intro{
-    font-size: 1.5vw;
-}
-
-* {
-    box-sizing: border-box
-}
-
-
-.site-construction-message {
-    background-color: yellow;
-    font-size: 3.5vw;
-    color: black;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    z-index: 10;
-    border: black dashed 10px;
-
-}
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-}
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-h1 {
-    font-size: 4vw; /* Large font size for heading */
-    color: #333; /* Dark color for the heading */
-    text-align: center; /* Center the heading */
-    margin-top: 20px; /* Space above the heading */
-}
-
-p {
-    font-size: 1.2vw; /* Standard font size for paragraph */
-    line-height: 1.6; /* Line height for better readability */
-    color: #666; /* Lighter text color for paragraphs */
-    margin-bottom: 20px; /* Space below paragraphs */
 }
