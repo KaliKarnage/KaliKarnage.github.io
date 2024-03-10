@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@200;300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
     <style>
         .form-control {
             border: 1px solid #ccc;
@@ -20,8 +24,15 @@
             height: auto;
             overflow: auto;
         }
+        body { margin: 0; }
+        canvas { display: block; }
+        #modelViewer { width: 100%; height: 100vh; }
+        button { position: absolute; top: 20px; z-index: 10; }
+        #prevModel { left: 20px; }
+        #nextModel { right: 20px; }
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Ben Villanueva |</a>
@@ -47,9 +58,12 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="Games.html"><i class="fa-solid fa-gamepad icon"></i> Games</a>
-                        <a class="dropdown-item active" href="Models.html"><i class="fa-solid fa-cube icon"></i> Models</a>
-                        <a class="dropdown-item" href="DataVisual.html"><i class="fa-solid fa-chart-simple icon"></i> Data Visualization</a>
-                        <a class="dropdown-item" href="NASASuits.html"><i class="fa-solid fa-user-astronaut"></i> NASA SUITS</a>
+                        <a class="dropdown-item active" href="Models.html"><i class="fa-solid fa-cube icon"></i>
+                            Models</a>
+                        <a class="dropdown-item" href="DataVisual.html"><i class="fa-solid fa-chart-simple icon"></i>
+                            Data Visualization</a>
+                        <a class="dropdown-item" href="NASASuits.html"><i class="fa-solid fa-user-astronaut"></i> NASA
+                            SUITS</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -65,27 +79,14 @@
     </nav>
     <div class="col-12">
         <div class="site-construction-message">
-            <p>Page is currently under construction</p>
+            <p>Testing Experimental Features</p>
         </div>
     </div>
     <header class="banner"></header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <select id="modelSelector" class="form-control">
-                    <!-- Model options will be populated by JavaScript -->
-                </select>
-            </div>
-            <div class="col-12">
-                <div id="modelViewer" style="width: 800px; height: 600px;">
-                    <!-- The model viewer will be inserted here by JavaScript -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="modelViewer"></div>
+    <button id="prevModel">Previous Model</button>
+    <button id="nextModel">Next Model</button>
     <script type="module" src="modelViewer.js"></script>
-
 </body>
+
 </html>
