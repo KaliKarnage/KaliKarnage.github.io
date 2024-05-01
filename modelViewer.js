@@ -7,7 +7,7 @@ let scene, camera, renderer;
 let currentModelIndex = 0;
 let currentModel = null;
 const models = [
-    { type: 'obj', path: 'models\Baton.obj' },
+    { type: 'obj', path: 'models/Baton.obj' },
     { type: 'fbx', path: 'models/model2.fbx' },
     // Add more models here
 ];
