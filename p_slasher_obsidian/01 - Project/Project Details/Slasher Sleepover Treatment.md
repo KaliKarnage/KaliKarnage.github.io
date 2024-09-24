@@ -7,6 +7,17 @@ Date: 12 August 2024
 You are the only surviving member of your friend group, and you’re stuck in this house with the man who murdered all of them. Escape will be difficult, but you’ve still got some chances to get out of this in one piece, or take him down with you. 
 
 Final Girl Simulator is a survival horror game that works in relatively short rounds of PvE against an AI Slasher. The game is in first person, set in a procedurally generated house with a randomly selected Slasher. The object of the game will be to find items, construct traps, and kill The Slasher before it can kill you.
+# General Info
+---
+Target Audience: E10+ or T
+Gamer Type: puzzle, horror-lite, 
+Target Platforms: PC (w/ controller support)
+Genre: Puzzle, AI, campy
+Number of Players: 1
+Projected Release Date: ---
+Development Platform: Unreal 5.4.3
+
+Design Inspirations: ---
 # Core Identity
 ---
 ## Gameplay
