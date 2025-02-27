@@ -1,0 +1,222 @@
+/* publications.css - Styles specific to the Publications page */
+
+/* Publications container */
+.publications-container {
+  position: relative;
+  padding: 30px;
+}
+
+/* Publication item styling */
+.publication-list {
+  margin-top: 20px;
+}
+
+.publication-item {
+  display: flex;
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.publication-date {
+  background: var(--primary-color);
+  color: white;
+  padding: 15px 10px;
+  min-width: 80px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.publication-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.publication-content h3 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.publication-authors {
+  font-style: italic;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.publication-journal {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.publication-abstract {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.publication-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.publication-link:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.publication-link i {
+  font-size: 1rem;
+}
+
+/* Publications tabs styling - for future expansion */
+.publications-tabs {
+  margin-top: 30px;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  margin-bottom: -1px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: none;
+}
+
+.nav-link:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-color);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: transparent;
+}
+
+.tab-content {
+  padding-top: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.show.active {
+  display: block;
+}
+
+/* Citation styling */
+.citation-format {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-family: "Courier New", monospace;
+  line-height: 1.6;
+  position: relative;
+}
+
+.citation-format::before {
+  content: "Citation";
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  background: var(--background-color);
+  padding: 0 10px;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  font-family: "Nunito", sans-serif;
+}
+
+.copy-citation {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.copy-citation:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .publication-item {
+    flex-direction: column;
+  }
+
+  .publication-date {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .publication-content {
+    padding: 15px;
+  }
+
+  .publication-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav-link {
+    border-radius: 5px;
+  }
+
+  .nav-link.active {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+  }
+}

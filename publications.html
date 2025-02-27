@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Ben Villanueva</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/publications.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="animated-background">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand">Ben Villanueva</a>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/KaliKarnage" target="_blank" class="nav-icon-btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/benedicto-villanueva/" target="_blank" class="nav-icon-btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="publications-container project-container">
+                <h1 class="text-center mb-4">Publications</h1>
+
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <div class="publication-date">2023</div>
+                        <div class="publication-content">
+                            <h3>ARSIS 6.0: A Mixed Reality Application for Enhancing Astronaut Efficiency and Autonomy
+                            </h3>
+                            <p class="publication-authors">Teogalbo, D. J. R., Auner, D., Ayala, N., Burnell, C.,
+                                Dayrit, T., Gamel, G., Lotspeich, N., Smith, A., Swanson, S., Willerup, E., ... &
+                                Villanueva, B.</p>
+                            <p class="publication-journal">In Proceedings of the HCI International 2023 (pp. 5-9).
+                                Springer.</p>
+                            <p class="publication-abstract">This research paper presents the development and
+                                implementation of ARSIS 6.0, a mixed reality application designed to enhance astronaut
+                                efficiency and autonomy during space missions. The system provides real-time information
+                                and guidance through an augmented reality interface, allowing astronauts to perform
+                                complex tasks with reduced dependency on ground control.</p>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1007/978-3-031-35634-6_27" target="_blank"
+                                    class="publication-link"><i class="fas fa-external-link-alt"></i> DOI:
+                                    10.1007/978-3-031-35634-6_27</a>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag ar">AR/MR</span>
+                                <span class="tech-tag">HCI</span>
+                                <span class="tech-tag">Space</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Benedicto Villanueva</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 3360,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1167,
+      "max": [
+        0.707999050617218,
+        10.3678359985352,
+        0.275768011808395
+      ],
+      "min": [
+        -0.707999050617218,
+        0.731422424316406,
+        -0.275768011808395
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1167,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1167,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 1167,
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "generator": "Adobe Substance 3D Painter 10.1.2",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 13440,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 14004,
+      "byteOffset": 13440,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 14004,
+      "byteOffset": 27444,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 18672,
+      "byteOffset": 41448,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 9336,
+      "byteOffset": 60120,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 69456,
+      "uri": "Macuahuitl.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "initialShadingGroup_baseColor.png"
+    },
+    {
+      "uri": "initialShadingGroup_occlusionRoughnessMetallic.png"
+    },
+    {
+      "uri": "initialShadingGroup_normal.png"
+    },
+    {
+      "uri": "initialShadingGroup_emissive.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "OPAQUE",
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 3
+      },
+      "name": "initialShadingGroup",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Macuahuitl:RoadKillOut",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 2,
+            "POSITION": 1,
+            "TANGENT": 3,
+            "TEXCOORD_0": 4
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "MacuahuitlUnflod.obj",
+      "scale": [
+        0.00999999977648258,
+        0.00999999977648258,
+        0.00999999977648258
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "Macuahuitl:RoadKillOut"
+    },
+    {
+      "mesh": 0,
+      "name": "Macuahuitl:RoadKillOut"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9985,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    }
+  ]
+}

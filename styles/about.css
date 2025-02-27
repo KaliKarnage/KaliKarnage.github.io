@@ -1,0 +1,226 @@
+/* about.css - Styles specific to the About Me page */
+
+/* Profile section */
+.about-container {
+  position: relative;
+  min-height: 400px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.about-icon {
+  color: var(--text-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-icon:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.section-divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary-color),
+    transparent
+  );
+  margin: 40px 0;
+  opacity: 0.5;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  position: relative;
+  width: 45%;
+  left: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  left: 5%;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+/* Skills grid */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li {
+  margin-bottom: 10px;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Fix for VR-related tags in the skills section */
+.skill-list .skill-badge.vr,
+.skill-list .skill-badge.metaquest,
+.skill-list .skill-badge.metaquest2,
+.skill-list .skill-badge.metaquestpro {
+  opacity: 1 !important; /* Override the 0.25 opacity from vr.scss */
+  color: white !important; /* Ensure text is visible */
+  width: auto !important; /* Maintain proper width */
+  display: inline-block !important; /* Keep correct display */
+  white-space: nowrap !important; /* Prevent text wrapping */
+}
+
+/* Additional catch-all for any VR-related classes in the skills section */
+.skill-list [class*="skill-badge"][class*="vr"],
+.skill-list [class*="skill-badge"][class*="quest"] {
+  opacity: 1 !important;
+  color: white !important;
+}
+
+.resume-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(30, 144, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-dot {
+    left: 31px;
+  }
+
+  .timeline-content {
+    width: 100%;
+    left: 0;
+    padding: 15px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+  }
+
+  .about-social {
+    margin-bottom: 30px;
+  }
+
+  .timeline-item {
+    padding: 10px 10px 10px 50px;
+  }
+}
