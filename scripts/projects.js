@@ -7,9 +7,12 @@ const projects = [
     role: "Led the development of custom hardware interfaces using Arduino to create accessible control schemes. Implemented game logic in Unreal Engine 5 with a focus on adaptable difficulty settings and alternative input methods.",
     technologies:
       "Created a modular control system with Arduino microcontrollers interfaced with Unreal Engine 5. Developed custom shaders for high-contrast visual feedback and integrated text-to-speech for audio cues. Designed adaptive difficulty systems that respond to player performance.",
-    image: "assets/circuitdiagram.png",
-    additionalImages: ["assets/arcade1.png", "assets/arcade2.png"],
-    techTags: ["Arduino", "Unreal Engine 5", "C++", "Electronics"],
+    image: "assets/images/AArcade04.png",
+    additionalImages: ["assets/images/AArcade01.jpg", "assets/images/AArcade02.jpg", "assets/images/AArcade03.jpg"],
+    techTags: ["Arduino", "Unreal Engine 5", "Blueprints", "Electronics"],
+    startDate: "September 2024",
+    endDate: "December 2024",
+    organization: "Boise State University",
   },
   {
     title: "NASA SUITS Challenge",
@@ -19,9 +22,12 @@ const projects = [
     role: "As UI team lead during the 2022-2023 school year, I guided our team through developing AR interfaces despite it being my first experience with MRTK, Meta Quest 2, and HoloLens 2. I managed project coordination to meet NASA's requirements, fostered a collaborative learning environment, and facilitated open discussions about our learning experiences. This leadership role involved setting clear goals, ensuring effective communication between sub-teams, and adapting quickly to new technologies.",
     technologies:
       "We utilized Unity with MRTK (Mixed Reality Toolkit) integration for AR development targeting Meta Quest 2 and HoloLens 2 platforms. Our development process involved continuous cycles of prototyping, testing, and refining our work as we became more familiar with these platforms. I documented our learning process, design decisions, and evolution of our understanding of these technologies, which served as a valuable knowledge base for the team.",
-    image: "assets/Suits02.png",
-    additionalImages: ["assets/suits1.png", "assets/suits3.png"],
+    image: "assets/images/SUITS_UI_Mockup01.png",
+    additionalImages: ["assets/images/BootlegHouston01.jpg", "assets/images/BootlegHouston02.jpg"],
     techTags: ["Unity", "MRTK", "C#", "AR/MR", "HoloLens 2", "Meta Quest 2"],
+    startDate: "September 2022",
+    endDate: "May 2023",
+    organization: "Boise State University",
   },
   {
     title: "360 Video Fishing Game",
@@ -31,8 +37,8 @@ const projects = [
     role: "My primary contributions included creating 3D models, texturing, and designing the User Interface (UI). This project marked my first experience with both Autodesk Maya for modeling and Substance Painter for texturing. I embraced these challenging new tools as an opportunity to expand my technical skillset and enhance my proficiency in 3D design.",
     technologies:
       "We utilized Unity as our development engine for deployment to Meta Quest platforms. I created detailed 3D models in Autodesk Maya with realistic texturing in Substance Painter. Our team successfully integrated these assets with 360° video footage to create a seamless, immersive experience with interactive elements that respond to user input.",
-    image: "assets/360fishing.png",
-    additionalImages: ["assets/fishing1.png", "assets/fishing2.png"],
+    image: "assets/images/FishingGear.png",
+    additionalImages: ["assets/images/Fish.png"],
     techTags: [
       "Unity",
       "C#",
@@ -51,8 +57,8 @@ const projects = [
     role: "As a solo developer, I handled all aspects of this multi-year project from concept to completion. Beginning with comprehensive Game Design Documents in my sophomore year, I started development in my junior year and concluded at the end of my senior year. This project allowed me to hone both my technical implementation skills and creative design abilities.",
     technologies:
       "The game was built in Unity using C# for the Meta Quest platform. I created all 3D assets using Maya, Substance Painter, and Blender, focusing on optimized models suitable for VR. The project incorporated custom interaction systems for object manipulation and environmental puzzles, all designed for an immersive VR experience.",
-    image: "assets/immersivegame.png",
-    additionalImages: ["assets/vrgame1.png", "assets/vrgame2.png"],
+    image: "assets/images/EnigmaDevPic05.png",
+    additionalImages: ["assets/images/EnigmaDevPic01.png", "assets/images/EnigmaDevPic02.png", "assets/images/EnigmaDevPic03.png", "assets/images/EnigmaDevPic04.png"],
     techTags: [
       "Unity",
       "C#",
@@ -72,8 +78,8 @@ const projects = [
     role: "I independently developed this web application to demonstrate my proficiency in modern web technologies. I designed and implemented the entire user interface, data structures, and visualization components. The project challenged me to create a narrative-driven experience that presents complex data in an accessible, engaging format.",
     technologies:
       "Built with React and Node.js for a responsive, component-based architecture. I leveraged D3.js to create three insightful interactive graphs that tell a compelling story through data. The application demonstrates responsive design principles and modern JavaScript practices for an optimal user experience across devices.",
-    image: "assets/mobiledatanarrative.png",
-    additionalImages: ["assets/data1.png", "assets/data2.png"],
+    image: "assets/images/DataNarrativeHome.jpg",
+    additionalImages: ["assets/images/DataNarrativeDataTable.jpg", "assets/images/DataNarrativeDensity.jpg"],
     techTags: ["HTML", "CSS", "JavaScript", "React", "Node.js", "D3.js"],
     focus: "World of Warcraft Weapons Evolution",
   },
@@ -85,20 +91,37 @@ const projects = [
     role: "As one of the Project Managers for a cross-disciplinary team of 7 professionals (including artists, programmers, and UX/UI designers), I co-led the development and maintenance of this innovative diagnostic tool. I facilitated team collaboration, managed agile workflows, and ensured timely delivery of project milestones.",
     technologies:
       "The project utilized game development technologies to create interactive cognitive tests that measure specific brain functions. Our prototype contributed to early-stage research efforts in medical diagnostics, demonstrating the potential of game-based cognitive assessment tools for healthcare applications.",
-    image: "assets/brainhealth.png", // You'll need to add an appropriate image
-    additionalImages: ["assets/brainhealth1.png", "assets/brainhealth2.png"], // Replace with actual images
+    image: "assets/images/BHAssembled.jpg",
+    additionalImages: ["assets/images/BHScreenshot.png"],
     techTags: [
       "Unity",
       "C#",
       "UX/UI Design",
       "Medical",
-      "Agile",
       "Project Management",
     ],
     startDate: "September 2024",
     endDate: "Present",
     organization: "Boise State University",
     isCurrent: true,
+    currentInfo: "This is an ongoing research project at Boise State University. Our team is currently working on refining the diagnostic algorithms and improving the user experience based on initial testing feedback. The project demonstrates the potential for game-based tools to contribute to healthcare diagnostics, particularly in the early detection of cognitive decline.",
+  },
+  {
+    title: "Survival Horror Game Prototype",
+    position: "AI Programmer",
+    description:
+      "Led Boise State's UI team in the NASA SUITS (Spacesuit User Interface Technologies for Students) challenge, developing augmented reality interfaces for astronaut spacesuits. NASA SUITS is an initiative that engages students to design spacesuit information displays within an augmented reality environment, improving astronaut efficiency and safety during spacewalks and extravehicular activities.",
+    role: "As UI team lead during the 2022-2023 school year, I guided our team through developing AR interfaces despite it being my first experience with MRTK, Meta Quest 2, and HoloLens 2. I managed project coordination to meet NASA's requirements, fostered a collaborative learning environment, and facilitated open discussions about our learning experiences. This leadership role involved setting clear goals, ensuring effective communication between sub-teams, and adapting quickly to new technologies.",
+    technologies:
+      "We utilized Unity with MRTK (Mixed Reality Toolkit) integration for AR development targeting Meta Quest 2 and HoloLens 2 platforms. Our development process involved continuous cycles of prototyping, testing, and refining our work as we became more familiar with these platforms. I documented our learning process, design decisions, and evolution of our understanding of these technologies, which served as a valuable knowledge base for the team.",
+    image: "assets/Suits02.png",
+    additionalImages: ["assets/suits1.png", "assets/suits3.png"],
+    techTags: ["Unreal Engine 5", "Blueprints", "C++"],
+    startDate: "September 2024",
+    endDate: "Present",
+    organization: "Torchfire Studios",
+    isCurrent: true,
+    currentInfo: "This is an ongoing project with Torchfire Studios. I am currently working on prototyping and implementing advanced AI behaviors. The project aims to create a unique survival horror experience with innovative AI systems and engaging gameplay mechanics.",
   },
 ];
 
@@ -123,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     // Otherwise, find the current project if any
     const currentProjectIndex = projects.findIndex(
-      (project) => project.isCurrent
+      (project) => project.isCurrent === true
     );
     if (currentProjectIndex !== -1) {
       projectToLoad = currentProjectIndex;
@@ -135,6 +158,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Set up button click handlers
   setupProjectButtons();
+  
+  // Set up modal functionality
+  setupImageModal();
 });
 
 function generateProjectButtons() {
@@ -217,9 +243,9 @@ function setupProjectButtons() {
     );
     if (activeButton) activeButton.classList.add("active");
   } else {
-    // Otherwise, make the button for current project active
+    // Otherwise, make the button for current project active (if any has isCurrent flag)
     const currentProjectIndex = projects.findIndex(
-      (project) => project.isCurrent
+      (project) => project.isCurrent === true
     );
     if (currentProjectIndex !== -1) {
       const activeButton = document.querySelector(
@@ -232,6 +258,40 @@ function setupProjectButtons() {
       if (firstButton) firstButton.classList.add("active");
     }
   }
+}
+
+// Setup image modal functionality
+function setupImageModal() {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeModal = document.querySelector(".close-modal");
+  
+  // Add click event listeners to enlargeable images after they're loaded in the DOM
+  document.addEventListener('click', function(e) {
+    if (e.target && e.target.classList.contains('enlargeable-image')) {
+      modal.style.display = "block";
+      modalImg.src = e.target.src;
+    }
+  });
+  
+  // Close modal when close button is clicked
+  closeModal.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // Close modal when clicking outside the image
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+  
+  // Close modal with escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape" && modal.style.display === "block") {
+      modal.style.display = "none";
+    }
+  });
 }
 
 function loadProject(index) {
@@ -255,13 +315,54 @@ function loadProject(index) {
         return `<span class="tech-tag ${className}">${tag}</span>`;
       })
       .join("");
+      
+    // Create gallery HTML if additional images exist
+    let galleryHTML = '';
+    if (project.additionalImages && project.additionalImages.length > 0) {
+      const galleryItemsHTML = project.additionalImages
+        .map((img) => `
+          <div class="gallery-item">
+            <img src="${img}" alt="${project.title} image" class="enlargeable-image">
+          </div>
+        `)
+        .join("");
+        
+      galleryHTML = `
+        <div class="project-gallery">
+          <h4>Gallery</h4>
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <img src="${project.image}" alt="${project.title} main image" class="enlargeable-image">
+            </div>
+            ${galleryItemsHTML}
+          </div>
+        </div>
+      `;
+    }
 
     // Special handling for NASA SUITS project (index 1)
     if (index === 1) {
       projectDisplay.innerHTML = `
         <div class="project-header mb-4">
           <h2 class="project-title">${project.title}</h2>
-          <p class="project-position badge">${project.position}</p>
+          <div class="d-flex align-items-center mb-2">
+            <p class="project-position badge">${project.position}</p>
+            ${project.startDate ? `
+            <span class="project-date ms-3">
+              <i class="far fa-calendar-alt"></i> ${project.startDate} - ${project.endDate || 'Present'}
+            </span>
+            ` : ''}
+            ${project.isCurrent ? `
+            <span class="current-project-badge ms-2">
+              <i class="fas fa-circle"></i> Current
+            </span>
+            ` : ''}
+          </div>
+          ${project.organization ? `
+          <p class="organization mb-2">
+            <i class="fas fa-university"></i> ${project.organization}
+          </p>
+          ` : ''}
           <div class="tech-tags my-2">
             ${techTagsHTML}
           </div>
@@ -270,7 +371,7 @@ function loadProject(index) {
         <div class="project-content">
           <div class="row mb-4">
             <div class="col-md-6">
-              <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-3">
+              <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-3 enlargeable-image">
             </div>
             <div class="col-md-6">
               <h4>Project Overview</h4>
@@ -324,6 +425,8 @@ function loadProject(index) {
             </div>
           </div>
           
+          ${galleryHTML}
+          
           <div class="row mb-4">
             <div class="col-12">
               <h4>Project Outcome</h4>
@@ -344,16 +447,20 @@ function loadProject(index) {
           <h2 class="project-title">${project.title}</h2>
           <div class="d-flex align-items-center mb-2">
             <p class="project-position badge">${project.position}</p>
+            ${project.startDate ? `
             <span class="project-date ms-3">
-              <i class="far fa-calendar-alt"></i> ${project.startDate} - ${project.endDate}
+              <i class="far fa-calendar-alt"></i> ${project.startDate} - ${project.endDate || 'Present'}
             </span>
+            ` : ''}
             <span class="current-project-badge ms-2">
               <i class="fas fa-circle"></i> Current
             </span>
           </div>
+          ${project.organization ? `
           <p class="organization mb-2">
             <i class="fas fa-university"></i> ${project.organization}
           </p>
+          ` : ''}
           <div class="tech-tags my-2">
             ${techTagsHTML}
           </div>
@@ -362,7 +469,7 @@ function loadProject(index) {
         <div class="project-content">
           <div class="row mb-4">
             <div class="col-md-6">
-              <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-3">
+              <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-3 enlargeable-image">
             </div>
             <div class="col-md-6">
               <h4>Project Overview</h4>
@@ -414,11 +521,13 @@ function loadProject(index) {
             </div>
           </div>
           
+          ${galleryHTML}
+          
           <div class="row mb-4">
             <div class="col-12">
               <div class="current-project-info">
                 <h4>Project Status</h4>
-                <p>This is an ongoing research project at Boise State University. Our team is currently working on refining the diagnostic algorithms and improving the user experience based on initial testing feedback. The project demonstrates the potential for game-based tools to contribute to healthcare diagnostics, particularly in the early detection of cognitive decline.</p>
+                <p>${project.currentInfo}</p>
               </div>
             </div>
           </div>
@@ -429,7 +538,19 @@ function loadProject(index) {
       projectDisplay.innerHTML = `
         <div class="project-header mb-4">
           <h2 class="project-title">${project.title}</h2>
-          <p class="project-position badge">${project.position}</p>
+          <div class="d-flex align-items-center mb-2">
+            <p class="project-position badge">${project.position}</p>
+            ${project.startDate ? `
+            <span class="project-date ms-3">
+              <i class="far fa-calendar-alt"></i> ${project.startDate} - ${project.endDate || 'Present'}
+            </span>
+            ` : ''}
+          </div>
+          ${project.organization ? `
+          <p class="organization mb-2">
+            <i class="fas fa-university"></i> ${project.organization}
+          </p>
+          ` : ''}
           <div class="tech-tags my-2">
             ${techTagsHTML}
           </div>
@@ -438,7 +559,7 @@ function loadProject(index) {
         <div class="project-content">
           <div class="row mb-4">
             <div class="col-md-6">
-              <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-3">
+              <img src="${project.image}" alt="${project.title}" class="img-fluid rounded mb-3 enlargeable-image">
             </div>
             <div class="col-md-6">
               <h4>Project Overview</h4>
@@ -456,6 +577,8 @@ function loadProject(index) {
               <p>${project.technologies}</p>
             </div>
           </div>
+          
+          ${galleryHTML}
         </div>
       `;
     }
