@@ -24,28 +24,8 @@ const supportedFormats = {
 // Model catalog - easily add or remove models from this object
 const modelCatalog = {
   "misc Models": {
-    title: "360° Fishing Game Assets",
+    title: "Miscellaneous Models",
     models: [
-      {
-        id: "fishing-rod",
-        name: "Fishing Rod",
-        thumbnail: "./assets/models/thumbnails/profilePlaceholder.png",
-        path: "./assets/models/WallOuterCorner.gltf",
-        format: "gltf",
-        description:
-          "This 3D model was created for the 360° Fishing Game project using Autodesk Maya and textured with Substance Painter. The model features realistic materials and textures optimized for real-time rendering in VR. The fishing rod was designed with attention to detail while maintaining performance for the Oculus Quest platform.",
-        tags: ["Maya", "Substance Painter", "VR"],
-      },
-      {
-        id: "fishing-boat",
-        name: "Fishing Boat",
-        thumbnail: "./assets/models/thumbnails/profilePlaceholder.png",
-        path: "./assets/models/Battery.obj",
-        format: "obj",
-        description:
-          "A detailed boat model created for the 360° Fishing Game environment. This model was designed to be visible from multiple viewing angles in the 360° video space. Created in Maya with textures hand-painted in Substance Painter to achieve a stylized look while maintaining realistic proportions.",
-        tags: ["Maya", "Substance Painter", "VR", "Environment Design"],
-      },
       {
         id: "Macuahuitl",
         name: "Macuahuitl",
@@ -55,70 +35,6 @@ const modelCatalog = {
         description:
           "I designed a futuristic Macuahuitl that merges traditional craftsmanship with modern materials. The body is textured with rich, natural wood, staying true to the weapon’s historical roots, while the iconic obsidian blades have been reimagined in sleek carbon fiber, giving it a high-tech edge. Glowing emissive accents pulse along the weapon, enhancing its futuristic feel, while intricate Mayan glyphs are engraved into the wood, preserving its cultural heritage.",
         tags: ["Maya", "Substance Painter"],
-      },
-    ],
-  },
-
-  // Project 2: Enigma VR Game
-  "enigma-vr": {
-    title: "Enigma VR Game Assets",
-    models: [
-      {
-        id: "vr-controller",
-        name: "VR Controller",
-        thumbnail: "assets/models/thumbnails/profilePlaceholder.png",
-        path: "assets/models/vr-controller.glb",
-        format: "glb",
-        description:
-          "A high-fidelity replica of the Oculus Quest 2 controller created for the Enigma VR Game. This model includes detailed button layouts and ergonomic features of the actual device. The model was optimized for in-game representation while maintaining visual accuracy.",
-        tags: ["Blender", "Unity", "VR Hardware"],
-      },
-      {
-        id: "puzzle-box",
-        name: "Puzzle Box",
-        thumbnail: "assets/models/thumbnails/profilePlaceholder.png",
-        path: "assets/models/puzzle-box.obj",
-        format: "obj",
-        description:
-          "One of the central interactive elements from the Enigma VR Game. This model features intricate mechanical parts and detailed texturing to create visual interest. The puzzle box was designed to be manipulated in VR with realistic physics interactions.",
-        tags: ["Maya", "C#", "Interactive Design", "VR"],
-      },
-      {
-        id: "game-environment",
-        name: "Game Environment",
-        thumbnail: "assets/models/thumbnails/profilePlaceholder.png",
-        path: "assets/models/environment.fbx",
-        format: "fbx",
-        description:
-          "A portion of the main environment from Enigma VR Game, featuring architectural elements and environmental props. The environment was designed to create an immersive atmosphere while maintaining optimal performance for VR platforms.",
-        tags: ["Blender", "Unity", "Environment Design", "Lighting"],
-      },
-    ],
-  },
-
-  // Project 3: NASA SUITS
-  "nasa-suits": {
-    title: "NASA SUITS Project Assets",
-    models: [
-      {
-        id: "nasa-helmet",
-        name: "NASA Helmet with AR Display",
-        thumbnail: "assets/models/thumbnails/profilePlaceholder.png",
-        path: "assets/models/nasa-helmet.glb",
-        format: "glb",
-        description:
-          "This model was created for the NASA SUITS Challenge project to visualize the AR interface integration with standard NASA EVA equipment. The helmet includes detailed modeling of visor displays and connection points for the mixed reality interface.",
-        tags: ["Blender", "AR/MR", "NASA SUITS", "MRTK"],
-      },
-      {
-        id: "hud-element",
-        name: "HUD Interface Element",
-        thumbnail: "assets/models/thumbnails/profilePlaceholder.png",
-        path: "assets/models/hud-element.gltf",
-        format: "gltf",
-        description:
-          "A 3D interface element designed for the astronaut heads-up display system. This component visualizes atmospheric data and system status for EVA operations. Created to be lightweight and optimized for real-time rendering in AR headsets.",
-        tags: ["AR/MR", "MRTK", "HoloLens", "UI/UX"],
       },
     ],
   },
