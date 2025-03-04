@@ -17,6 +17,7 @@ const projects = [
     startDate: "September 2024",
     endDate: "December 2024",
     organization: "Boise State University",
+    video: null, // Optional video link (YouTube, Vimeo, etc.)
   },
   {
     title: "NASA SUITS Challenge",
@@ -35,6 +36,7 @@ const projects = [
     startDate: "September 2022",
     endDate: "May 2023",
     organization: "Boise State University",
+    video: "https://www.youtube.com/watch?v=O3d10S8iaTo",
   },
   {
     title: "360 Video Fishing Game",
@@ -55,6 +57,7 @@ const projects = [
       "Meta Quest",
     ],
     year: "Sophomore Year",
+    video: null,
   },
   {
     title: "Individual Immersive Game (Enigma)",
@@ -81,6 +84,7 @@ const projects = [
       "Meta Quest",
     ],
     timeline: "Sophomore to Senior Year",
+    video: null,
   },
   {
     title: "Mobile Data Narrative",
@@ -97,6 +101,7 @@ const projects = [
     ],
     techTags: ["HTML", "CSS", "JavaScript", "React", "Node.js", "D3.js"],
     focus: "World of Warcraft Weapons Evolution",
+    video: null,
   },
   {
     title: "Brain Health Diagnostic Tool",
@@ -115,6 +120,7 @@ const projects = [
     isCurrent: true,
     currentInfo:
       "This is an ongoing research project at Boise State University. Our team is currently working on refining the diagnostic algorithms and improving the user experience based on initial testing feedback. The project demonstrates the potential for game-based tools to contribute to healthcare diagnostics, particularly in the early detection of cognitive decline.",
+    video: null,
   },
   {
     title: "Survival Horror Game Prototype",
@@ -124,8 +130,8 @@ const projects = [
     role: "As the AI Programmer, I mastered Unreal Engine's sophisticated behavior tree and blackboard systems to create dynamic enemy behaviors. I implemented advanced AI perception capabilities that allowed enemies to detect players through sight and sound, creating realistic responses to the player's presence. Additionally, I designed and coded comprehensive health and damage systems that provided the foundation for compelling combat mechanics. This project expanded my proficiency with both Blueprint visual scripting and C++ programming in a professional game development context.",
     technologies:
       "This project was developed using Unreal Engine 5, leveraging both Blueprint visual scripting and C++ programming for optimal performance. I implemented sophisticated AI systems using UE5's behavior trees, blackboards, and AIPerception components to create responsive enemy behaviors. The prototype demonstrated advanced pathfinding, sensory perception systems, and dynamic combat mechanics, all optimized for the survival horror genre's specific gameplay requirements.",
-    image: "assets/Suits02.png",
-    additionalImages: ["assets/suits1.png", "assets/suits3.png"],
+    image: "assets/images/placeholder.jpg",
+    additionalImages: ["assets/images/placeholder.jpg", "assets/images/placeholder.jpg"],
     techTags: ["Unreal Engine 5", "Blueprints", "C++"],
     startDate: "September 2024",
     endDate: "Present",
@@ -133,6 +139,25 @@ const projects = [
     isCurrent: true,
     currentInfo:
       "This is an ongoing project with Torchfire Studios. I am currently working on prototyping and implementing advanced AI behaviors. The project aims to create a unique survival horror experience with innovative AI systems and engaging gameplay mechanics.",
+    video: null,
+  },
+  {
+    title: "The Talking Stick",
+    position: "AI Programmer",
+    description:
+      "As the Lead AI Programmer, I designed and implemented advanced AI systems for the game's enemy behavior. The core design focused on an enemy that primarily hunts based on sound, aligning with the 'talking stick' mechanic. This project pushed me to develop sophisticated enemy behaviors using Unreal Engine’s AI architecture. I crafted dynamic enemy behaviors that react realistically to both environmental cues and player actions, enhancing the game's atmosphere and intensifying the overall sense of suspense. ",
+    role: "As the AI Programmer, I mastered Unreal Engine's sophisticated behavior tree and blackboard systems to create dynamic enemy behaviors. I implemented advanced AI perception capabilities that allowed enemies to detect players through sight and sound, creating realistic responses to the player's presence. Additionally, I designed and coded comprehensive health and damage systems that provided the foundation for compelling combat mechanics. This project expanded my proficiency with both Blueprint visual scripting and C++ programming in a professional game development context.",
+    technologies:
+      "This project was developed using Unreal Engine 5, leveraging both Blueprint visual scripting and C++ programming for optimal performance. I implemented sophisticated AI systems using UE5's behavior trees, blackboards, and AIPerception components to create responsive enemy behaviors. The prototype demonstrated advanced pathfinding, sensory perception systems, and dynamic combat mechanics, all optimized for the survival horror genre's specific gameplay requirements.",
+    image: "assets/images/Stock1.jpg",
+    additionalImages: [],
+    techTags: ["Unreal Engine 5", "Blueprints", "C++"],
+    startDate: "September 2024",
+    endDate: "Present",
+    isCurrent: true,
+    currentInfo:
+      "This networked multiplayer project began in Fall 2024, and we decided to continue its development into the Spring. I am currently focused on prototyping and implementing advanced AI behaviors. Our goal is to create a thrilling and immersive party survival horror experience that delivers both fun and intense gameplay.",
+    video: null,
   },
 ];
 
@@ -327,6 +352,66 @@ function loadProject(index) {
       })
       .join("");
 
+    // Function to create dynamic tech showcase items based on project's techTags
+    const createTechShowcaseHTML = (project) => {
+      // Define icon mappings for common technologies
+      const techIcons = {
+        "Unity": "fas fa-cubes",
+        "Unreal Engine 5": "fas fa-gamepad",
+        "Unreal Engine": "fas fa-gamepad",
+        "C#": "fas fa-code",
+        "C++": "fas fa-code",
+        "Blueprints": "fas fa-project-diagram",
+        "MRTK": "fas fa-vr-cardboard",
+        "AR/MR": "fas fa-glasses",
+        "VR": "fas fa-vr-cardboard",
+        "VR Development": "fas fa-vr-cardboard",
+        "Meta Quest": "fas fa-vr-cardboard",
+        "Meta Quest 2": "fas fa-vr-cardboard",
+        "HoloLens 2": "fas fa-glasses",
+        "Maya": "fas fa-cube",
+        "Autodesk Maya": "fas fa-cube",
+        "Blender": "fas fa-cube",
+        "Substance Painter": "fas fa-paint-brush",
+        "Arduino": "fas fa-microchip",
+        "Electronics": "fas fa-bolt",
+        "React": "fab fa-react",
+        "Node.js": "fab fa-node-js",
+        "JavaScript": "fab fa-js",
+        "HTML": "fab fa-html5",
+        "CSS": "fab fa-css3-alt",
+        "D3.js": "fas fa-chart-line",
+        "Project Management": "fas fa-tasks",
+        "UX/UI Design": "fas fa-pencil-ruler",
+        "Medical": "fas fa-heartbeat",
+        // Add more mappings as needed
+      };
+
+      // Get just the first 4 tech tags if there are more than 4
+      const displayTags = project.techTags.slice(0, 4);
+      
+      // Create HTML for tech items
+      const techItemsHTML = displayTags.map(tag => {
+        // Default icon if no specific mapping exists
+        const icon = techIcons[tag] || "fas fa-laptop-code";
+        return `
+          <div class="col-6 mb-2">
+            <div class="tech-item">
+              <i class="${icon}"></i> ${tag}
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      return `
+        <div class="tech-showcase mt-3">
+          <div class="row">
+            ${techItemsHTML}
+          </div>
+        </div>
+      `;
+    };
+
     // Create gallery HTML if additional images exist
     let galleryHTML = "";
     if (project.additionalImages && project.additionalImages.length > 0) {
@@ -351,6 +436,72 @@ function loadProject(index) {
           </div>
         </div>
       `;
+    }
+    
+    // Create video HTML if a video link exists
+    let videoHTML = "";
+    if (project.video) {
+      // Check if it's a YouTube link
+      if (project.video.includes('youtube.com/') || project.video.includes('youtu.be/')) {
+        // Extract YouTube video ID
+        let videoId = '';
+        if (project.video.includes('youtube.com/watch?v=')) {
+          videoId = project.video.split('youtube.com/watch?v=')[1].split('&')[0];
+        } else if (project.video.includes('youtu.be/')) {
+          videoId = project.video.split('youtu.be/')[1].split('?')[0];
+        }
+        
+        if (videoId) {
+          videoHTML = `
+            <div class="project-video mt-4">
+              <h4>Project Video</h4>
+              <div class="video-container">
+                <iframe 
+                  width="100%" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/${videoId}" 
+                  title="${project.title} video" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          `;
+        }
+      } else if (project.video.includes('vimeo.com/')) {
+        // Handle Vimeo videos
+        let videoId = project.video.split('vimeo.com/')[1].split('?')[0];
+        
+        videoHTML = `
+          <div class="project-video mt-4">
+            <h4>Project Video</h4>
+            <div class="video-container">
+              <iframe 
+                src="https://player.vimeo.com/video/${videoId}" 
+                width="100%" 
+                height="315" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen 
+                title="${project.title} video">
+              </iframe>
+            </div>
+          </div>
+        `;
+      } else {
+        // For other video URLs, provide a direct link
+        videoHTML = `
+          <div class="project-video mt-4">
+            <h4>Project Video</h4>
+            <div class="video-link">
+              <a href="${project.video}" target="_blank" class="btn btn-primary">
+                <i class="fas fa-video"></i> Watch Video
+              </a>
+            </div>
+          </div>
+        `;
+      }
     }
 
     // Special handling for NASA SUITS project (index 1)
@@ -427,34 +578,13 @@ function loadProject(index) {
             <div class="col-md-6">
               <h4>Technologies Used</h4>
               <p>We utilized Unity with MRTK (Mixed Reality Toolkit) integration for AR development targeting Meta Quest 2 and HoloLens 2 platforms. Our development process involved continuous cycles of prototyping, testing, and refining our work as we became more familiar with these technologies.</p>
-              <div class="tech-showcase mt-3">
-                <div class="row">
-                  <div class="col-6 mb-2">
-                    <div class="tech-item">
-                      <i class="fas fa-vr-cardboard"></i> Meta Quest 2
-                    </div>
-                  </div>
-                  <div class="col-6 mb-2">
-                    <div class="tech-item">
-                      <i class="fas fa-glasses"></i> HoloLens 2
-                    </div>
-                  </div>
-                  <div class="col-6 mb-2">
-                    <div class="tech-item">
-                      <i class="fas fa-cubes"></i> Unity
-                    </div>
-                  </div>
-                  <div class="col-6 mb-2">
-                    <div class="tech-item">
-                      <i class="fas fa-code"></i> MRTK
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ${createTechShowcaseHTML(project)}
             </div>
           </div>
           
           ${galleryHTML}
+          
+          ${videoHTML}
           
           <div class="row mb-4">
             <div class="col-12">
@@ -535,34 +665,13 @@ function loadProject(index) {
             <div class="col-md-6">
               <h4>Technologies Used</h4>
               <p>${project.technologies}</p>
-              <div class="tech-showcase mt-3">
-                <div class="row">
-                  <div class="col-6 mb-2">
-                    <div class="tech-item">
-                      <i class="fas fa-gamepad"></i> Game Development
-                    </div>
-                  </div>
-                  <div class="col-6 mb-2">
-                    <div class="tech-item">
-                      <i class="fas fa-brain"></i> Cognitive Science
-                    </div>
-                  </div>
-                  <div class="col-6 mb-2">
-                    <div class="tech-item">
-                      <i class="fas fa-tasks"></i> Agile Methods
-                    </div>
-                  </div>
-                  <div class="col-6 mb-2">
-                    <div class="tech-item">
-                      <i class="fas fa-users"></i> Team Leadership
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ${createTechShowcaseHTML(project)}
             </div>
           </div>
           
           ${galleryHTML}
+          
+          ${videoHTML}
           
           <div class="row mb-4">
             <div class="col-12">
@@ -628,10 +737,13 @@ function loadProject(index) {
             <div class="col-md-6">
               <h4>Technologies Used</h4>
               <p>${project.technologies}</p>
+              ${createTechShowcaseHTML(project)}
             </div>
           </div>
           
           ${galleryHTML}
+          
+          ${videoHTML}
         </div>
       `;
     }
